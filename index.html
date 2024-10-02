@@ -7,10 +7,17 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
+    <!-- 팝업창 -->
+    <div class="popup_holder" id="up_btn">
+      <div class="popup_box">
+        <h2>팝업창입니다</h2>
+        <button class="btn_close">닫기</button>
+      </div>
+    </div>
     <!-- 팝업버튼 -->
-    <button class="pop_up_btn">
+    <button class="pop_up_btn btn_open">
       <div class="pop_icon"></div>
-      <h3>pop up</h3>
+      <h3>POPUP</h3>
     </button>
     <header>
       <div class="hearder_wrap">
@@ -63,28 +70,37 @@
     </header>
     <!-- 메인 -->
     <main>
+      <!-- 화살표 포함 전체 박스 -->
       <section class="fitst_sec">
-        <div class="main_wrap_bg">
-          <div class="slick_slider">
+        <!-- 슬릭넣는 박스 여기넣어야함 -->
+        <div class="put_slick">
+          <!-- 슬라이드1-->
+          <div class="slid_base">
+            <!-- 슬라이드 텍스트 -->
             <div class="slider_txt">
               <a href="#">Event</a>
               <h2>타이틀입니다.</h2>
               <p>내용입니다. 내용입니다.</p>
             </div>
+            <!-- 슬릭은 이미지가 뒤로 가야한다. -->
+            <div class="main_wrap_bg"></div>
           </div>
-          <button class="arrow"></button>
         </div>
+
+        <!-- 방향키 -->
+        <div class="prev"></div>
+        <div class="next"></div>
       </section>
       <!-- 두번째 섹션 -->
       <section class="two_sec">
         <div class="content_wrap">
           <h2>PROJECT</h2>
-          <div class="container_wrap">
+          <div class="container_wrap" id="main_btn">
             <div class="sub_btn">
-              <button>#ALL</button>
-              <button>#UIUX</button>
-              <button>#DESIGN</button>
-              <button>#Development</button>
+              <button class="all">#ALL</button>
+              <button class="uiux">#UIUX</button>
+              <button class="design">#DESIGN</button>
+              <button class="development">#Development</button>
             </div>
             <div class="box_wrapper">
               <!-- 컨텐츠 영역 -->
