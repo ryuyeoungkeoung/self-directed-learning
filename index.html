@@ -4,147 +4,222 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- css -->
     <link rel="stylesheet" href="./css/index.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <!-- 팝업창 -->
-    <div class="popup_holder" id="up_btn">
-      <div class="popup_box">
-        <h2>팝업창입니다</h2>
-        <button class="btn_close">닫기</button>
+    <div id="wrap">
+      <!-- 팝업창 -->
+      <div class="popup_holder" id="up_btn">
+        <div class="popup_box">
+          <h2>팝업창입니다</h2>
+          <button class="btn_close">닫기</button>
+        </div>
       </div>
-    </div>
-    <!-- 팝업버튼 -->
-    <button class="pop_up_btn btn_open">
-      <div class="pop_icon"></div>
-      <h3>POPUP</h3>
-    </button>
-    <header>
-      <div class="hearder_wrap">
-        <h1>
-          <a href="#">
-            <img src="./img/logo.png" alt="로고" />
-          </a>
-        </h1>
-        <div class="aline_box">
-          <!-- 네비영역 -->
-          <nav>
-            <ul>
-              <li><a href="#">회사소개</a></li>
-              <li><a href="#">주요사업</a></li>
-              <li><a href="#">매거진</a></li>
-              <li><a href="#">공지사항</a></li>
-              <li><a href="#">채용공고</a></li>
-            </ul>
-          </nav>
-          <div class="search_menu_wrap">
-            <!-- 서치영역 -->
-            <form action="#" method="post" class="input_wrap" id="input_box">
-              <input
-                type="text"
-                class="input_text"
-                placeholder="텍스트를 입력하세요"
-              />
-              <button class="search_input"></button>
-              <!-- 블러이벤트 자바스크립트 -->
-              <div class="hidden_input">
-                <h2>추천검색어</h2>
-                <div class="hide_btn">
-                  <div class="hide_sub">
-                    <button>#디자인</button>
-                    <button>#기획</button>
-                    <button>#퍼블리셔</button>
+      <!-- 팝업버튼 -->
+      <button class="pop_up_btn btn_open">
+        <div class="pop_icon"></div>
+        <h3>POPUP</h3>
+      </button>
+      <header>
+        <div class="hearder_wrap">
+          <h1>
+            <a href="#">
+              <img src="./img/logo.png" alt="로고" />
+            </a>
+          </h1>
+          <div class="aline_box">
+            <!-- 네비영역 -->
+            <nav>
+              <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">주요사업</a></li>
+                <li><a href="#">매거진</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">채용공고</a></li>
+              </ul>
+            </nav>
+            <div class="search_menu_wrap">
+              <!-- 서치영역 -->
+              <form action="#" method="post" class="input_wrap" id="input_box">
+                <input
+                  type="text"
+                  class="input_text"
+                  placeholder="텍스트를 입력하세요"
+                />
+                <button class="search_input"></button>
+                <!-- 블러이벤트 자바스크립트 -->
+                <div class="hidden_input">
+                  <h2>추천검색어</h2>
+                  <div class="hide_btn">
+                    <div class="hide_sub">
+                      <button>#디자인</button>
+                      <button>#기획</button>
+                      <button>#퍼블리셔</button>
+                    </div>
+                    <button>#코딩테스트</button>
+                    <button>#백엔드개발자</button>
                   </div>
-                  <button>#코딩테스트</button>
-                  <button>#백엔드개발자</button>
+                </div>
+              </form>
+              <!-- 메뉴버튼 -->
+              <a href="#" id="menu_btn">
+                <img src="./img/menu.png" alt="메뉴" />
+                <!-- 슬라이드 메뉴 -->
+                <div class="menu_wrap">
+                  <div class="sub_box">
+                    <div class="show_box">
+                      <div class="exit_btn">
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <!-- 오른쪽 1차 메뉴 -->
+                      <ul class="main_box">
+                        <li>
+                          <a href="#">사업소개</a>
+                          <!-- 2차 메뉴 -->
+                          <ul class="sub_twomenu">
+                            <li><a href="#">하이하이</a></li>
+                            <li><a href="#">하이하이</a></li>
+                            <li><a href="#">하이하이</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">사업</a>
+                          <!-- 2차 메뉴 -->
+                          <ul class="sub_twomenu">
+                            <li><a href="#">하이하이</a></li>
+                            <li><a href="#">하이하이</a></li>
+                            <li><a href="#">하이하이</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">사업소</a>
+                          <!-- 2차 메뉴 -->
+                          <ul class="sub_twomenu">
+                            <li><a href="#">하이하이</a></li>
+                            <li><a href="#">하이하이</a></li>
+                            <li><a href="#">하이하이</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">사업소개개</a>
+                          <!-- 2차 메뉴 -->
+                          <ul class="sub_twomenu">
+                            <li><a href="#">하이하이</a></li>
+                            <li><a href="#">하이하이</a></li>
+                            <li><a href="#">하이하이</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- 메인 -->
+      <main>
+        <!-- 화살표 포함 전체 박스 -->
+        <section class="fitst_sec swiper">
+          <!-- 슬릭넣는 박스 여기넣어야함 -->
+          <div class="put_slick swiper-wrapper">
+            <!-- 슬라이드1-->
+            <div class="slid_base swiper-slide">
+              <!-- 슬라이드 텍스트 -->
+              <div class="slider_txt">
+                <a href="#">Event</a>
+                <h2>타이틀입니다.</h2>
+                <p>내용입니다. 내용입니다.</p>
+              </div>
+              <!-- 슬릭은 이미지가 뒤로 가야한다. -->
+              <div class="main_wrap_bg"></div>
+            </div>
+            <!-- 슬라이드2-->
+            <div class="slid_base swiper-slide">
+              <!-- 슬라이드 텍스트 -->
+              <div class="slider_txt">
+                <a href="#">Event</a>
+                <h2>타이틀입니다.</h2>
+                <p>내용입니다. 내용입니다.</p>
+              </div>
+              <!-- 슬릭은 이미지가 뒤로 가야한다. -->
+              <div class="main_wrap_bg"></div>
+            </div>
+          </div>
+          <!-- 방향키 -->
+          <div class="inner_btn">
+            <div class="prv_net_line">
+              <div class="prev swiper-button-prev"></div>
+              <div class="next swiper-button-next"></div>
+            </div>
+          </div>
+        </section>
+        <!-- 두번째 섹션 -->
+        <section class="two_sec">
+          <div class="content_wrap">
+            <h2>PROJECT</h2>
+            <div class="container_wrap" id="main_btn">
+              <div class="sub_btn">
+                <button class="all">#ALL</button>
+                <button class="uiux">#UIUX</button>
+                <button class="design">#DESIGN</button>
+                <button class="development">#Development</button>
+              </div>
+              <div class="box_wrapper">
+                <!-- 컨텐츠 영역 -->
+                <div class="box box1">
+                  <a href="#"><div class="content_bg content_box1"></div></a>
+                  <h3>타이틀이 들어갑니다.</h3>
+                  <p>서브타이틀이 틀어갑니다. 서브타이틀이 틀어갑니다.</p>
+                </div>
+                <div class="box box2">
+                  <a href="#"><div class="content_bg content_box2"></div></a>
+                  <h3>타이틀이 들어갑니다.</h3>
+                  <p>서브타이틀이 틀어갑니다. 서브타이틀이 틀어갑니다.</p>
+                </div>
+                <div class="box box3">
+                  <a href="#"><div class="content_bg content_box3"></div></a>
+                  <h3>타이틀이 들어갑니다.</h3>
+                  <p>서브타이틀이 틀어갑니다. 서브타이틀이 틀어갑니다.</p>
+                </div>
+                <div class="box box4">
+                  <a href="#"><div class="content_bg content_box4"></div></a>
+                  <h3>타이틀이 들어갑니다.</h3>
+                  <p>서브타이틀이 틀어갑니다. 서브타이틀이 틀어갑니다.</p>
                 </div>
               </div>
-            </form>
-            <!-- 메뉴버튼 -->
-            <a href="#" class="menu_btn">
-              <img src="./img/menu.png" alt="메뉴" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- 메인 -->
-    <main>
-      <!-- 화살표 포함 전체 박스 -->
-      <section class="fitst_sec">
-        <!-- 슬릭넣는 박스 여기넣어야함 -->
-        <div class="put_slick">
-          <!-- 슬라이드1-->
-          <div class="slid_base">
-            <!-- 슬라이드 텍스트 -->
-            <div class="slider_txt">
-              <a href="#">Event</a>
-              <h2>타이틀입니다.</h2>
-              <p>내용입니다. 내용입니다.</p>
-            </div>
-            <!-- 슬릭은 이미지가 뒤로 가야한다. -->
-            <div class="main_wrap_bg"></div>
-          </div>
-        </div>
-
-        <!-- 방향키 -->
-        <div class="prev"></div>
-        <div class="next"></div>
-      </section>
-      <!-- 두번째 섹션 -->
-      <section class="two_sec">
-        <div class="content_wrap">
-          <h2>PROJECT</h2>
-          <div class="container_wrap" id="main_btn">
-            <div class="sub_btn">
-              <button class="all">#ALL</button>
-              <button class="uiux">#UIUX</button>
-              <button class="design">#DESIGN</button>
-              <button class="development">#Development</button>
-            </div>
-            <div class="box_wrapper">
-              <!-- 컨텐츠 영역 -->
-              <div class="box box1">
-                <a href="#"><div class="content_bg content_box1"></div></a>
-                <h3>타이틀이 들어갑니다.</h3>
-                <p>서브타이틀이 틀어갑니다. 서브타이틀이 틀어갑니다.</p>
-              </div>
-              <div class="box box2">
-                <a href="#"><div class="content_bg content_box2"></div></a>
-                <h3>타이틀이 들어갑니다.</h3>
-                <p>서브타이틀이 틀어갑니다. 서브타이틀이 틀어갑니다.</p>
-              </div>
-              <div class="box box3">
-                <a href="#"><div class="content_bg content_box3"></div></a>
-                <h3>타이틀이 들어갑니다.</h3>
-                <p>서브타이틀이 틀어갑니다. 서브타이틀이 틀어갑니다.</p>
-              </div>
-              <div class="box box4">
-                <a href="#"><div class="content_bg content_box4"></div></a>
-                <h3>타이틀이 들어갑니다.</h3>
-                <p>서브타이틀이 틀어갑니다. 서브타이틀이 틀어갑니다.</p>
-              </div>
             </div>
           </div>
+          <a href="#" class="more_btn"
+            >VIEW MORE
+            <div class="arrow2"></div
+          ></a>
+        </section>
+      </main>
+      <!-- 풋터 -->
+      <footer>
+        <div class="footer_wrap">
+          <div class="footer_logo"></div>
+          <h4>Copyright&copy;yeoung_keoung</h4>
+          <ul>
+            <li><a href="#" class="footer_icon face_icon"></a></li>
+            <li><a href="#" class="footer_icon insta_icon"></a></li>
+            <li><a href="#" class="footer_icon youthbe_icon"></a></li>
+          </ul>
         </div>
-        <a href="#" class="more_btn"
-          >VIEW MORE
-          <div class="arrow2"></div
-        ></a>
-      </section>
-    </main>
-    <!-- 풋터 -->
-    <footer>
-      <div class="footer_wrap">
-        <div class="footer_logo"></div>
-        <h4>Copyright&copy;yeoung_keoung</h4>
-        <ul>
-          <li><a href="#" class="footer_icon face_icon"></a></li>
-          <li><a href="#" class="footer_icon insta_icon"></a></li>
-          <li><a href="#" class="footer_icon youthbe_icon"></a></li>
-        </ul>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
   <script src="./js/common.js"></script>
 </html>
