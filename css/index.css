@@ -222,13 +222,14 @@ input:focus {
 .show_box {
   list-style: none;
   width: 500px;
-  background-color: aqua;
+  background-color: rgb(255, 255, 255);
   height: 100vh;
+  box-sizing: border-box;
+  padding: 1%;
 }
 .main_box {
   width: 100%;
   height: fit-content;
-  background-color: bisque;
 }
 /* 메뉴 나가기 버튼 */
 .exit_btn {
@@ -271,6 +272,10 @@ input:focus {
   height: 0px;
   width: 100%;
   transition: 0.3s;
+  background-color: #d6d6d6;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 0px 7px;
 }
 .main_box .sub_twomenu li {
   font-size: 15px;
