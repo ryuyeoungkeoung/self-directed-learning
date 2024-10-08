@@ -333,7 +333,7 @@ input:focus {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  z-index: 1;
+  z-index: 998;
 }
 .prev {
   background-image: url(../img/left_arrow.png);
@@ -363,7 +363,7 @@ input:focus {
 }
 .inner_btn {
   width: 1200px;
-  height: 100%;
+  height: 10%;
   position: absolute;
   margin: 0 auto;
   display: flex;
@@ -392,8 +392,12 @@ input:focus {
   text-align: center;
   line-height: 35px;
   margin: 0 auto;
+  position: absolute;
+  top: 40%;
   color: rgb(255, 255, 255);
   background-color: transparent;
+  transform: translateY(-40px);
+  z-index: 999;
 }
 .slider_txt a:hover {
   background-color: rgb(255 255 255);

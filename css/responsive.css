@@ -160,4 +160,15 @@
   .popup_box {
     width: 300px;
   }
+  /* 메인 화살표 수정 */
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    background-size: 35%;
+    top: 57% !important;
+  }
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    background-size: 35%;
+    top: 57% !important;
+  }
 }
