@@ -98,7 +98,11 @@
   }
   /* 클릭인풋 박스 */
   .hidden_input {
-    width: 300px;
+    width: 253px;
+  }
+  /* 히든인풋 위치조정 */
+  .hidden_input {
+    left: 0px;
   }
   /* 풋터 1자 변경 */
   footer {
