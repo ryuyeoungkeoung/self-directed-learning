@@ -134,7 +134,6 @@ input:focus {
   border-radius: 100px;
   background-color: rgb(223, 223, 223);
   position: relative;
-  overflow: hidden;
   box-sizing: border-box;
   padding-left: 21px;
 }
