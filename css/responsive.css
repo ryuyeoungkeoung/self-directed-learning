@@ -14,9 +14,7 @@
 }
 @media screen and (max-width: 1300px) {
   /* 박스 여러개묶음 세로정렬 */
-  .two_sec {
-    height: 1500px;
-  }
+
   .container_wrap {
     height: 100%;
     align-items: center;
@@ -49,14 +47,10 @@
   }
   /* 메인 영역 화살표들 영역변경% */
   .inner_btn {
-    width: 100%;
+    width: 90%;
   }
-  /* 풋터 넓이 변경 */
 }
 @media screen and (max-width: 1159px) {
-  .two_sec {
-    height: 2000px;
-  }
   /* 풋터 */
   .footer_wrap {
     width: 100%;
@@ -146,9 +140,6 @@
     width: 52%;
     display: flex;
     flex-wrap: wrap;
-  }
-  .two_sec {
-    height: 2200px;
   }
 
   /* 풋터 */
